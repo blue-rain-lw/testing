@@ -1,5 +1,6 @@
 import requests
 import random
+import time
 payload = {
     "mobile":"admin",
     "password":"123456"
@@ -10,3 +11,5 @@ headers = {"authorization":f"Bearer  {cookie}"}
 
 num = "".join(str(random.choice(range(10))) for _ in range(10))
 mobile = "{}{}".format("1",num)
+def nowtime():
+    return time.time()*10000

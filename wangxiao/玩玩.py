@@ -133,8 +133,59 @@ payload4 = {
 import pprint
 # r5 = requests.post("https://testwx.baijiayun.com/api/course/chapter",data=payload4,headers = headers)
 # print(r5.text)
-r5 = requests.get("https://testwx.baijiayun.com/api/teacher")
-r5.encoding = "utf-8"
-print(r5.text)
+# r5 = requests.get("https://testwx.baijiayun.com/api/teacher")
+# r5.encoding = "utf-8"
+# print(r5.text)
+
+import json
+a ={"code":202,"msg":"\u8bf7\u5148\u767b\u5f55"}
+print(a.j)
+'''
+[{“id”:1,”content”:”\u9009\u98791”,”is_right”:1},
+{“id”:2,”content”:”\u9009\u98792”,”is_right”:2}]
+
+[
+    {
+        "id":1,
+        "content":"这里的是选项信息",
+        "is_right":1
+    }
+{
+        "id":2,
+        "content":"这里的是选项信息",
+        "is_right":2
+    }
+{
+        "id":3,
+        "content":"这里的是选项信息",
+        "is_right":2
+    }
+{
+        "id":4,
+        "content":"这里的是选项信息",
+        "is_right":2
+}
+]
+
+
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
